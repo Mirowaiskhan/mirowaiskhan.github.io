@@ -52,8 +52,9 @@ export default function Hero() {
             <a href="#contact" className="btn-cyber btn-pink clip-notch">
               Contact
             </a>
-            <a
-              href={`mailto:${profile.email}`}
+            
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              download
               className="group flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-dim transition-colors hover:text-teal-bright"
             >
               <span className="text-teal">↳</span> Get_CV
