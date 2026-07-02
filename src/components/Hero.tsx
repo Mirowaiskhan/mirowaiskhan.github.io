@@ -53,7 +53,7 @@ export default function Hero() {
               Contact
             </a>
             
-              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              href={`${import.meta.env.BASE_URL}Mir_Owais_Ali_Khan_Resume.pdf`}
               download
               className="group flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-dim transition-colors hover:text-teal-bright"
             >
