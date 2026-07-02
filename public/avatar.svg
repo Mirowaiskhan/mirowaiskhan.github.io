@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1519"/>
+      <stop offset="1" stop-color="#0a0b0c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#0f605c" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0f605c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35f2d6"/>
+      <stop offset="1" stop-color="#0f605c"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#2fbba8" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect width="512" height="512" fill="url(#grid)"/>
+  <rect width="512" height="512" fill="url(#glow)"/>
+
+  <!-- HUD ring -->
+  <circle cx="256" cy="238" r="150" fill="none" stroke="#2fbba8" stroke-opacity="0.18" stroke-width="1.5"/>
+  <circle cx="256" cy="238" r="150" fill="none" stroke="#35f2d6" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="6 340" stroke-dashoffset="0"/>
+
+  <!-- silhouette bust -->
+  <g opacity="0.92">
+    <circle cx="256" cy="196" r="70" fill="url(#fig)" opacity="0.85"/>
+    <path d="M138 430c0-68 53-120 118-120s118 52 118 120z" fill="url(#fig)" opacity="0.85"/>
+  </g>
+
+  <!-- scan line -->
+  <rect x="130" y="252" width="252" height="3" fill="#35f2d6" opacity="0.5"/>
+
+  <!-- corner ticks -->
+  <path d="M40 40h34M40 40v34" stroke="#2fbba8" stroke-width="3"/>
+  <path d="M472 40h-34M472 40v34" stroke="#2fbba8" stroke-width="3"/>
+  <path d="M40 472h34M40 472v-34" stroke="#2fbba8" stroke-width="3"/>
+  <path d="M472 472h-34M472 472v-34" stroke="#2fbba8" stroke-width="3"/>
+</svg>
