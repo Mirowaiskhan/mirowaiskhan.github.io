@@ -10,7 +10,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/owais03/",
   linkedinHandle: "owais03",
   status: "Authorized to work in the U.S. · Open to Relocation · Onsite / Hybrid / Remote",
-  photo: "/profile.jpg",
+  photo: `${import.meta.env.BASE_URL}profile.jpg`,
 };
 
 export const summary =
